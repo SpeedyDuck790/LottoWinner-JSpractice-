@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <style>
+              body{
+            background-color: #283331;
+        }
+        h1{
+            color: #94aa19;
+            text-align: center;
+        }
+
+        #bank{
+            color: #94aa19;
+            text-align: center;
+        }
+        
+
+        #c{
+            color: #94aa19;
+            text-align: center;
+        }
+        #signin{
+            color: rgb(170, 163, 163);
+            text-align: center;
+        }
+        input{
+            color: rgb(170, 163, 163);
+            text-align: center;
+        }
+        button{
+            color: rgb(170, 163, 163);
+            text-align: center;
+        }
+        #signin{
+            
+            display: flex;
+            flex-direction: column;
+            max-width: 20%;
+            justify-content: center;
+            margin: auto;
+        }
+        button{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #283331;
+        }
+        #Greet{
+            color: #94aa19;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <body>
+        <h1>Lottery</h1>
+        <p id="chance"></p>
+        <!-- <p id="demo"></p>
+        <input type="text" id="num" placeholder="number please">
+        <button onclick="myFunction()">Double it</button>
+        <p id="demo2"></p> -->
+        
+        <p id="Greet">Hey Ready To Be a Winner!</p>
+        <form id="signin" >
+            <input type="text" name="FirstName"placeholder="FirstName" required></input>
+            <input type="text" name="LastName"placeholder="LastName"required></input>
+            <input type="text" name="LuckyNumber"placeholder="LuckyNumber"required></input>
+            <input type="password" name="password"placeholder="password"required></input>
+        </form>
+        <button onclick="save()">submit</button>
+        <p id="c"></p>
+        <hr>
+        <p id="bank">No Entries</p>
+    </body>
+
+    
+    <script src="Lotto.js"></script>
+</html>
