@@ -3,6 +3,7 @@
     <style>
               body{
             background-color: #283331;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         h1{
             color: #94aa19;
@@ -10,7 +11,7 @@
         }
 
         #bank{
-            color: #94aa19;
+            color: #c9c9c9;
             text-align: center;
         }
         
@@ -19,6 +20,23 @@
             color: #94aa19;
             text-align: center;
         }
+        #c.enter{
+            color: #94aa19;
+            text-align: center;
+            animation-timing-function: ease-in-out;
+            animation-name: spin;
+            animation-duration: 2s;
+            
+            
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
         #signin{
             color: rgb(170, 163, 163);
             text-align: center;
@@ -26,6 +44,7 @@
         input{
             color: rgb(170, 163, 163);
             text-align: center;
+            border-radius: 10px;
         }
         button{
             color: rgb(170, 163, 163);
@@ -35,7 +54,7 @@
             
             display: flex;
             flex-direction: column;
-            max-width: 20%;
+            max-width: 10%;
             justify-content: center;
             margin: auto;
         }
@@ -46,15 +65,26 @@
             background-color: #283331;
         }
         #Greet{
-            color: #94aa19;
+            color: #ffd900;
             text-align: center;
             margin: auto;
             display: flex;
             flex-direction: column;
         }
+        #chance{
+            color: #c2bf00;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            
+        }
+
+        
     </style>
     <body>
-        <h1>Lottery</h1>
+        <h1>Lotto Entry</h1>
         <p id="chance"></p>
         <!-- <p id="demo"></p>
         <input type="text" id="num" placeholder="number please">
@@ -67,8 +97,8 @@
             <input type="text" name="LastName"placeholder="LastName"required></input>
             <input type="text" name="LuckyNumber"placeholder="LuckyNumber"required></input>
             <input type="password" name="password"placeholder="password"required></input>
+            <button type="submit"onclick="save()">chk</button>
         </form>
-        <button onclick="save()">submit</button>
         <p id="c"></p>
         <hr>
         <p id="bank">No Entries</p>
